@@ -1,0 +1,27 @@
+# Core environment
+fastapi==0.110.0          # Web framework to expose your RAG API
+uvicorn==0.29.0           # ASGI server to run FastAPI
+
+# Database connectivity
+pyodbc==5.1.0             # Connect Python to SQL Server
+sqlalchemy==2.0.30        # ORM/DB abstraction (optional, but useful)
+
+# Embeddings + Retrieval
+sentence-transformers==2.7.0   # Embedding models (MiniLM, etc.)
+faiss-cpu==1.14.2                # Vector search engine for retrieval
+#numpy==1.26.4                   # Needed for FAISS and embeddings
+
+# Hugging Face integration
+transformers==4.41.2       # Load Hugging Face models locally
+huggingface-hub==0.23.0    # Authenticate and call Hugging Face API
+datasets==2.19.0           # Handle text datasets if needed
+
+# Bot Framework SDK
+botbuilder-core==4.14.3    # Core SDK for Teams bot
+botbuilder-schema==4.14.3  # Schema definitions for Teams activities
+aiohttp==3.9.5             # Async HTTP client (used in bot.py)
+
+# Utilities
+pydantic==2.7.1            # Data validation for FastAPI request models
+
+python-dotenv==1.2.2
